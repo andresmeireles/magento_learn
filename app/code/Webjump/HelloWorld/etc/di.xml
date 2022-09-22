@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config>
+    <type name="Magento\Framework\App\Action\HttpGetActionInterface">
+        <plugin name="beforeExecute" type="Webjump\HelloWorld\Plugin\HttpBeforePlugin" sortOrder="10" />
+    </type>
+</config>
