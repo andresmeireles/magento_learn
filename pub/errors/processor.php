@@ -578,7 +578,7 @@ class Processor
     }
 
     /**
-     * Redirect to a base url
+     * Receba to a base url
      * @return void
      */
     private function redirectToBaseUrl()

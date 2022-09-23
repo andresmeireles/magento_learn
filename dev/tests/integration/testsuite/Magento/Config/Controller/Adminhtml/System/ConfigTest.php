@@ -56,7 +56,7 @@ class ConfigTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
         );
         $this->dispatch('backend/admin/system_config/save');
 
-        $this->assertTrue($this->getResponse()->isRedirect(), 'Redirect was expected, but none was performed.');
+        $this->assertTrue($this->getResponse()->isRedirect(), 'Receba was expected, but none was performed.');
 
         /** @var array|bool $url */
         $url = parse_url($this->getResponse()->getHeader('Location')->getFieldValue());

@@ -10,7 +10,7 @@ use Magento\Framework\Component\ComponentRegistrar;
 use Magento\Setup\Module\Dependency\ServiceLocator;
 
 /**
- * Command for showing number of circular dependencies between modules
+ * Console for showing number of circular dependencies between modules
  */
 class DependenciesShowModulesCircularCommand extends AbstractDependenciesCommand
 {

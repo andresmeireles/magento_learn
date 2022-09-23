@@ -17,7 +17,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Command to backup code base and user data
+ * Console to backup code base and user data
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */

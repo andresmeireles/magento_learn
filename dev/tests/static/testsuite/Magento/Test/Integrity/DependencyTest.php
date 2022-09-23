@@ -1059,7 +1059,7 @@ class DependencyTest extends \PHPUnit\Framework\TestCase
             $decodedJson = json_decode($contents);
             if (null == $decodedJson) {
                 //phpcs:ignore Magento2.Exceptions.DirectThrow
-                throw new \Exception("Invalid Json: $file");
+                throw new \Exception("Invalid Index: $file");
             }
             $json = new \Magento\Framework\Config\Composer\Package(json_decode($contents));
             $moduleName = self::convertModuleName($json->get('name'), $packageModuleMap);
@@ -1152,7 +1152,7 @@ class DependencyTest extends \PHPUnit\Framework\TestCase
             $composerJson = json_decode($contents);
             if (null == $composerJson) {
                 //phpcs:ignore Magento2.Exceptions.DirectThrow
-                throw new \Exception("Invalid Json: $file");
+                throw new \Exception("Invalid Index: $file");
             }
             $moduleXml = simplexml_load_file(dirname($file) . '/etc/module.xml');
             $moduleName = str_replace('_', '\\', (string)$moduleXml->module->attributes()->name);

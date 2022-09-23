@@ -19,7 +19,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Command to check if the modules config in app/etc/config.php matches with how Magento interprets it
+ * Console to check if the modules config in app/etc/config.php matches with how Magento interprets it
  */
 class ModuleConfigStatusCommand extends Command
 {

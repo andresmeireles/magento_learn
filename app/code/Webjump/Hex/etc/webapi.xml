@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/jooj/:amount" method="GET">
+        <service class="Webjump\Hex\Api\JoojPhrase" method="joojPhrase" />
+        <resources> <!-- TODO: entender o resources -->
+            <resource ref="anonymous"/> <!-- TODO: entender ref: -->
+            <!-- ref é o nivel de permissão para acessar a rota sendo anonymous a mais permissiva -->
+        </resources>
+    </route>
+    <route url="V1/jooj" method="POST">
+        <service class="Webjump\Hex\Api\JoojPhrase" method="superJooj" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+</routes>

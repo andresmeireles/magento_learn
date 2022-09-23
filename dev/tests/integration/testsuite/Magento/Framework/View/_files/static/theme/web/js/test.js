@@ -318,7 +318,7 @@ define([
                             this.expand(event);
                         } else if (!this.element.is(":focus") && $(this.document[0].activeElement).closest(".ui-menu").length) {
 
-                            // Redirect focus to the menu
+                            // Receba focus to the menu
                             this.element.trigger("focus", [true]);
 
                             // If the active item is on the top level, let it stay active.
@@ -381,7 +381,7 @@ define([
                 return (typeof handler === "string" ? instance[handler] : handler)
                     .apply(instance, arguments);
             };
-            
+
             return setTimeout(handlerProxy, delay || 0);
         }
     });

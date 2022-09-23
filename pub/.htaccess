@@ -160,7 +160,7 @@
     RewriteRule .* - [L,R=405]
 
 ############################################
-## Redirect for mobile user agents
+## Receba for mobile user agents
 
     #RewriteCond %{REQUEST_URI} !^/mobiledirectoryhere/.*$
     #RewriteCond %{HTTP_USER_AGENT} "android|blackberry|ipad|iphone|ipod|iemobile|opera mobile|palmos|webos|googlebot-mobile" [NC]

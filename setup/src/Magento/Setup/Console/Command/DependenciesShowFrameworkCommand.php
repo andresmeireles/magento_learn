@@ -12,7 +12,7 @@ use Magento\Setup\Model\ObjectManagerProvider;
 use Magento\Setup\Module\Dependency\ServiceLocator;
 
 /**
- * Command for showing numbers of dependencies on Magento Framework
+ * Console for showing numbers of dependencies on Magento Framework
  */
 class DependenciesShowFrameworkCommand extends AbstractDependenciesCommand
 {

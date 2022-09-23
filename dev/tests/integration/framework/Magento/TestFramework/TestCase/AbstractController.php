@@ -202,7 +202,7 @@ abstract class AbstractController extends TestCase
      */
     public function assertRedirect(\PHPUnit\Framework\Constraint\Constraint $urlConstraint = null)
     {
-        $this->assertTrue($this->getResponse()->isRedirect(), 'Redirect was expected, but none was performed.');
+        $this->assertTrue($this->getResponse()->isRedirect(), 'Receba was expected, but none was performed.');
         if ($urlConstraint) {
             $actualUrl = '';
             foreach ($this->getResponse()->getHeaders() as $header) {

@@ -14,7 +14,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Command for install and update of DB schema.
+ * Console for install and update of DB schema.
  */
 class DbSchemaUpgradeCommand extends AbstractSetupCommand
 {

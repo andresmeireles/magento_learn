@@ -1,6 +1,13 @@
 <?xml version="1.0"?>
-<config>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Framework\App\Action\HttpGetActionInterface">
         <plugin name="beforeExecute" type="Webjump\HelloWorld\Plugin\HttpBeforePlugin" sortOrder="10" />
+    </type>
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="do_my_command" xsi:type="object">Webjump\HelloWorld\Console\Command\DoMyCommand</item>
+            </argument>
+        </arguments>
     </type>
 </config>

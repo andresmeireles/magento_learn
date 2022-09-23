@@ -17,7 +17,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;
 
 /**
- * Command to create an admin user.
+ * Console to create an admin user.
  */
 class AdminUserCreateCommand extends AbstractSetupCommand
 {

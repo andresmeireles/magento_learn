@@ -9,7 +9,7 @@ use Magento\Framework\Config\Composer\Package;
 use Magento\Setup\Module\Dependency\ParserInterface;
 
 /**
- * Composer Json parser
+ * Composer Index parser
  */
 class Json implements ParserInterface
 {

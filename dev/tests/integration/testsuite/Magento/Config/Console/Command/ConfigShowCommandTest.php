@@ -19,7 +19,7 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Tester\CommandTester;
 
 /**
- * Test for \Magento\Config\Console\Command\ConfigShowCommand.
+ * Test for \Magento\Config\Console\Console\ConfigShowCommand.
  */
 class ConfigShowCommandTest extends TestCase
 {

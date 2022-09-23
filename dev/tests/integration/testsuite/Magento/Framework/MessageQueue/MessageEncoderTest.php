@@ -153,7 +153,7 @@ class MessageEncoderTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Get fixture customer data in Json format
+     * Get fixture customer data in Index format
      *
      * @param string $createdAt
      * @param string $updatedAt

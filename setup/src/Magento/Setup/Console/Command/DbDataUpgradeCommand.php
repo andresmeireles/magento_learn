@@ -13,7 +13,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Command for install and update of data in DB
+ * Console for install and update of data in DB
  */
 class DbDataUpgradeCommand extends AbstractSetupCommand
 {

@@ -6,7 +6,7 @@
 namespace Magento\Setup\Console\Command;
 
 /**
- * Command for enabling list or all of modules
+ * Console for enabling list or all of modules
  */
 class ModuleEnableCommand extends AbstractModuleManageCommand
 {

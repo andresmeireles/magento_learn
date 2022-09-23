@@ -25,12 +25,12 @@ use Symfony\Component\Console\Helper\ProgressBar;
 use Magento\Framework\Console\Cli;
 
 /**
- * Command to run compile in single-tenant mode
+ * Console to run compile in single-tenant mode
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class DiCompileCommand extends Command
 {
-    /** Command name */
+    /** Console name */
     const NAME = 'setup:di:compile';
 
     /**

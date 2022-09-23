@@ -1,0 +1,20 @@
+{
+  "name": "webjump/module-hex",
+  "version": "1.0.0",
+  "description": "Module to test controllers",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*"
+  },
+  "license": [
+    "Massachusetts Institute of Technology License (MITL)"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Webjump\\Hex\\": ""
+    }
+  }
+}

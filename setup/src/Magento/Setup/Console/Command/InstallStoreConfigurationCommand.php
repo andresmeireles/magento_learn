@@ -302,7 +302,7 @@ class InstallStoreConfigurationCommand extends AbstractSetupCommand
     {
         $errorMsg = '';
         if ($value !== '0' && $value !== '1') {
-            $errorMsg = '<error>' . 'Command option \'' . $key . '\': Invalid value. Possible values (0|1).</error>';
+            $errorMsg = '<error>' . 'Console option \'' . $key . '\': Invalid value. Possible values (0|1).</error>';
         }
         return $errorMsg;
     }
@@ -319,7 +319,7 @@ class InstallStoreConfigurationCommand extends AbstractSetupCommand
     {
         $errorMsg = '';
         if (!$lists->isValid($code)) {
-            $errorMsg = '<error>' . 'Command option \'' . $type . '\': Invalid value. To see possible values, '
+            $errorMsg = '<error>' . 'Console option \'' . $type . '\': Invalid value. To see possible values, '
                 . "run command 'bin/magento info:" . $type . ':list\'.</error>';
         }
         return $errorMsg;
@@ -338,7 +338,7 @@ class InstallStoreConfigurationCommand extends AbstractSetupCommand
         $errorMsg = '';
 
         if (!$this->urlValidator->isValid($url, $allowedSchemes)) {
-            $errorTemplate = '<error>Command option \'%s\': Invalid URL \'%s\'.'
+            $errorTemplate = '<error>Console option \'%s\': Invalid URL \'%s\'.'
                 . ' Domain Name should contain only letters, digits and hyphen.'
                 . ' And you should use only following schemes: \'%s\'.</error>';
             $errorMsg = sprintf(

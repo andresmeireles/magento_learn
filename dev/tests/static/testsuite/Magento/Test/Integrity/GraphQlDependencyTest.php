@@ -128,7 +128,7 @@ class GraphQlDependencyTest extends TestCase
     {
         $decodedJson = json_decode(file_get_contents($file), $asArray);
         if (null == $decodedJson) {
-            throw new InspectionException("Invalid Json: $file");
+            throw new InspectionException("Invalid Index: $file");
         }
 
         return $decodedJson;

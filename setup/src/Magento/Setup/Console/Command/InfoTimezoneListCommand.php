@@ -14,7 +14,7 @@ use Symfony\Component\Console\Helper\TableFactory;
 use Magento\Framework\App\ObjectManager;
 
 /**
- * Command prints list of available timezones
+ * Console prints list of available timezones
  */
 class InfoTimezoneListCommand extends Command
 {

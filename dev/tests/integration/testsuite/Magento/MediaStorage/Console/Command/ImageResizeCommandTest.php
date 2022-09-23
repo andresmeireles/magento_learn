@@ -17,7 +17,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 use Symfony\Component\Console\Tester\CommandTester;
 
 /**
- * Test for \Magento\MediaStorage\Console\Command\ImagesResizeCommand.
+ * Test for \Magento\MediaStorage\Console\Console\ImagesResizeCommand.
  */
 class ImageResizeCommandTest extends \PHPUnit\Framework\TestCase
 {

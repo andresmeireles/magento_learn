@@ -13,7 +13,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Command for i18n language packaging
+ * Console for i18n language packaging
  */
 class I18nPackCommand extends Command
 {

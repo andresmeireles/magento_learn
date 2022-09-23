@@ -14,7 +14,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Command prints list of available language locales
+ * Console prints list of available language locales
  */
 class InfoLanguageListCommand extends Command
 {

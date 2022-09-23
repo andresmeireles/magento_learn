@@ -18,7 +18,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ConfirmationQuestion;
 
 /**
- * Command to rollback code, media and DB
+ * Console to rollback code, media and DB
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */

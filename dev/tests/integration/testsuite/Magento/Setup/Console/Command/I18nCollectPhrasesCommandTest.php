@@ -37,7 +37,7 @@ class I18nCollectPhrasesCommandTest extends \PHPUnit\Framework\TestCase
     {
         $this->tester->execute(
             [
-                'directory' => BP . '/dev/tests/integration/testsuite/Magento/Setup/Console/Command/_files/',
+                'directory' => BP . '/dev/tests/integration/testsuite/Magento/Setup/Console/Console/_files/',
             ]
         );
 
@@ -46,10 +46,10 @@ class I18nCollectPhrasesCommandTest extends \PHPUnit\Framework\TestCase
 
     public function testExecuteCsvOutput()
     {
-        $outputPath = BP . '/dev/tests/integration/testsuite/Magento/Setup/Console/Command/_files/output/phrases.csv';
+        $outputPath = BP . '/dev/tests/integration/testsuite/Magento/Setup/Console/Console/_files/output/phrases.csv';
         $this->tester->execute(
             [
-                'directory' => BP . '/dev/tests/integration/testsuite/Magento/Setup/Console/Command/_files/phrases/',
+                'directory' => BP . '/dev/tests/integration/testsuite/Magento/Setup/Console/Console/_files/phrases/',
                 '--output' => $outputPath,
             ]
         );
@@ -57,7 +57,7 @@ class I18nCollectPhrasesCommandTest extends \PHPUnit\Framework\TestCase
         $handle = fopen($outputPath, 'r');
         $output = fread($handle, filesize($outputPath));
         $expected = file_get_contents(
-            BP . '/dev/tests/integration/testsuite/Magento/Setup/Console/Command/_files/expectedPhrases.csv'
+            BP . '/dev/tests/integration/testsuite/Magento/Setup/Console/Console/_files/expectedPhrases.csv'
         );
         $this->assertEquals($expected, $output);
         unlink($outputPath);
@@ -72,7 +72,7 @@ class I18nCollectPhrasesCommandTest extends \PHPUnit\Framework\TestCase
 
         $this->tester->execute(
             [
-                'directory' => BP . '/dev/tests/integration/testsuite/Magento/Setup/Console/Command/_files/non_exist',
+                'directory' => BP . '/dev/tests/integration/testsuite/Magento/Setup/Console/Console/_files/non_exist',
             ]
         );
     }

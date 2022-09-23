@@ -16,7 +16,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Tests for \Magento\Indexer\Console\Command\IndexerReindexCommand.
+ * Tests for \Magento\Indexer\Console\Console\IndexerReindexCommand.
  *
  * @magentoDbIsolation disabled
  * @magentoAppIsolation enabled

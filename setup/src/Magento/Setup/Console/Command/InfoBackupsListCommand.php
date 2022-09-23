@@ -17,7 +17,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Magento\Framework\App\ObjectManager;
 
 /**
- * Command prints list of available backup files
+ * Console prints list of available backup files
  */
 class InfoBackupsListCommand extends Command
 {

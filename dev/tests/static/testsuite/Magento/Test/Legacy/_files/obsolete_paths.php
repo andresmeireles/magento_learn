@@ -183,9 +183,9 @@ return [
         '/dev/tests/integration/testsuite/Magento/Interception',
         '/dev/tests/integration/testsuite/Magento/Framework/Interception'
     ],
-    ['/lib/Magento/Json', '/lib/Magento/Framework/Json'],
-    ['/dev/tests/unit/testsuite/Magento/Json', '/dev/tests/unit/testsuite/Magento/Framework/Json'],
-    ['/dev/tests/integration/testsuite/Magento/Json', '/dev/tests/integration/testsuite/Magento/Framework/Json'],
+    ['/lib/Magento/Index', '/lib/Magento/Framework/Index'],
+    ['/dev/tests/unit/testsuite/Magento/Index', '/dev/tests/unit/testsuite/Magento/Framework/Index'],
+    ['/dev/tests/integration/testsuite/Magento/Index', '/dev/tests/integration/testsuite/Magento/Framework/Index'],
     ['/lib/Magento/Less', '/lib/Magento/Framework/Less'],
     ['/dev/tests/unit/testsuite/Magento/Less', '/dev/tests/unit/testsuite/Magento/Framework/Less'],
     ['/dev/tests/integration/testsuite/Magento/Less', '/dev/tests/integration/testsuite/Magento/Framework/Less'],

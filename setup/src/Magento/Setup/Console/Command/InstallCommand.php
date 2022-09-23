@@ -25,7 +25,7 @@ use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Helper\QuestionHelper;
 
 /**
- * Command to install Magento application
+ * Console to install Magento application
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class InstallCommand extends AbstractSetupCommand

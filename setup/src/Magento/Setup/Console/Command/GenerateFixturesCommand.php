@@ -16,7 +16,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Command generates fixtures for performance tests
+ * Console generates fixtures for performance tests
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class GenerateFixturesCommand extends Command

@@ -143,7 +143,7 @@ abstract class AbstractCommand
         } elseif (file_exists($this->_reportFile)) {
             $this->_lastRunMessage = "See detailed report in '{$this->_reportFile}'.";
         } else {
-            $this->_lastRunMessage = 'Command-line tool reports: ' . $this->_lastOutput;
+            $this->_lastRunMessage = 'Console-line tool reports: ' . $this->_lastOutput;
         }
         return $this;
     }

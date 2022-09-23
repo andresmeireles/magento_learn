@@ -22,7 +22,7 @@ use Magento\Framework\Exception\LocalizedException;
 use Magento\Deploy\Service\DeployStaticContent;
 
 /**
- * Command to Deploy Static Content
+ * Console to Deploy Static Content
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */

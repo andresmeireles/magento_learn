@@ -14,7 +14,7 @@ use Magento\Framework\Setup\Lists;
 use Magento\Framework\App\ObjectManager;
 
 /**
- * Command prints list of available currencies
+ * Console prints list of available currencies
  */
 class InfoCurrencyListCommand extends Command
 {

@@ -27,7 +27,7 @@ class ServiceLocator
     private static $xmlConfigParser;
 
     /**
-     * Composer Json parser
+     * Composer Index parser
      *
      * @var \Magento\Setup\Module\Dependency\ParserInterface
      */

@@ -13,7 +13,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Command for i18n dictionary generation
+ * Console for i18n dictionary generation
  */
 class I18nCollectPhrasesCommand extends Command
 {
