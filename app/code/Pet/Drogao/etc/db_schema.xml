@@ -1,0 +1,23 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="pet_table" resource="default" engine="innodb" comment="table dos pet top">
+        <column xsi:type="int" name="entity_id" unsigned="true" nullable="false" identity="true" comment="entity id" />
+        <column xsi:type="int" name="owner_id" unsigned="true" nullable="false" identity="false" />
+        <column xsi:type="varchar" name="pet_name" length="255" nullable="false" comment="pet name" />
+        <column xsi:type="varchar" name="pet_owner" length="255" nullable="false" comment="pet owner name" />
+        <column xsi:type="datetime" name="created_at" nullable="false" />
+        <column xsi:type="varchar" name="owner_telephone" length="255" nullable="false" comment="owner telephone number" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id" />
+        </constraint>
+        <constraint
+            xsi:type="foreign"
+            referenceId="OWNER_ID_ON_PET_TABLE"
+            table="pet_table"
+            column="owner_id"
+            referenceTable="customer_entity"
+            referenceColumn="entity_id"
+            onDelete="CASCADE"
+        />
+    </table>
+</schema>
